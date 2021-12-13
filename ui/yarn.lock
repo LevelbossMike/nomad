@@ -6984,7 +6984,7 @@ cli-spinners@^2.0.0, cli-spinners@^2.5.0:
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.5.0.tgz#12763e47251bf951cb75c201dfa58ff1bcb2d047"
   integrity sha512-PC+AmIuK04E6aeSs/pUccSujsTzBhu4HzC2dL+CfJB/Jcc2qTRbEwZQDfIUpt2Xl8BodYBEq8w4fc0kU2I9DjQ==
 
-cli-table3@0.6.0:
+cli-table3@0.6.0, cli-table3@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/cli-table3/-/cli-table3-0.6.0.tgz#b7b1bc65ca8e7b5cef9124e13dc2b21e2ce4faee"
   integrity sha512-gnB85c3MGC7Nm9I/FkiasNBOKjOiO1RNuXXarQms37q4QMpWdlbBgD/VnOStA2faG1dpXMv31RFApjX1/QdgWQ==
@@ -7890,6 +7890,13 @@ debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   dependencies:
     ms "2.1.2"
 
+debug@^4.2.0:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
+  dependencies:
+    ms "2.1.2"
+
 debug@^4.3.2, debug@~4.3.1, debug@~4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
@@ -8382,6 +8389,41 @@ ember-auto-import@^1.10.0, ember-auto-import@^1.2.19, ember-auto-import@^1.6.0:
     broccoli-debug "^0.6.4"
     broccoli-node-api "^1.7.0"
     broccoli-plugin "^4.0.0"
+    debug "^3.1.0"
+    ember-cli-babel "^7.0.0"
+    enhanced-resolve "^4.0.0"
+    fs-extra "^6.0.1"
+    fs-tree-diff "^2.0.0"
+    handlebars "^4.3.1"
+    js-string-escape "^1.0.1"
+    lodash "^4.17.19"
+    mkdirp "^0.5.1"
+    resolve-package-path "^3.1.0"
+    rimraf "^2.6.2"
+    semver "^7.3.4"
+    symlink-or-copy "^1.2.0"
+    typescript-memoize "^1.0.0-alpha.3"
+    walk-sync "^0.3.3"
+    webpack "^4.43.0"
+
+ember-auto-import@^1.10.1:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-1.12.0.tgz#52246b04891090e2608244e65c4c6af7710df12b"
+  integrity sha512-fzMGnyHGfUNFHchpLbJ98Vs/c5H2wZBMR9r/XwW+WOWPisZDGLUPPyhJQsSREPoUQ+o8GvyLaD/rkrKqW8bmgw==
+  dependencies:
+    "@babel/core" "^7.1.6"
+    "@babel/preset-env" "^7.10.2"
+    "@babel/traverse" "^7.1.6"
+    "@babel/types" "^7.1.6"
+    "@embroider/core" "^0.33.0"
+    babel-core "^6.26.3"
+    babel-loader "^8.0.6"
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babylon "^6.18.0"
+    broccoli-debug "^0.6.4"
+    broccoli-node-api "^1.7.0"
+    broccoli-plugin "^4.0.0"
+    broccoli-source "^3.0.0"
     debug "^3.1.0"
     ember-cli-babel "^7.0.0"
     enhanced-resolve "^4.0.0"
@@ -9222,6 +9264,26 @@ ember-element-helper@^0.3.2:
     ember-cli-babel "^7.17.2"
     ember-cli-htmlbars "^5.1.0"
     ember-compatibility-helpers "^1.2.1"
+
+ember-exam@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/ember-exam/-/ember-exam-6.1.0.tgz#1ea2c0ece27ac8ad6a80d959b1c207611b7dfdd7"
+  integrity sha512-H9tg7eUgqkjAsr1/15UzxGyZobGLgsyTi56Ng0ySnkYGCRfvVpwtVc3xgcNOFnUaa9RExUFpxC0adjW3K87Uxw==
+  dependencies:
+    "@embroider/macros" "^0.36.0"
+    chalk "^4.1.0"
+    cli-table3 "^0.6.0"
+    debug "^4.2.0"
+    ember-auto-import "^1.10.1"
+    ember-cli-babel "^7.21.0"
+    ember-cli-version-checker "^5.1.2"
+    execa "^4.0.3"
+    fs-extra "^9.0.1"
+    js-yaml "^3.14.0"
+    npmlog "^4.1.2"
+    rimraf "^3.0.2"
+    semver "^7.3.2"
+    silent-error "^1.1.1"
 
 ember-export-application-global@^2.0.1:
   version "2.0.1"
@@ -10187,7 +10249,7 @@ execa@^3.0.0:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-execa@^4.0.0:
+execa@^4.0.0, execa@^4.0.3:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-4.1.0.tgz#4e5491ad1572f2f17a77d388c6c857135b22847a"
   integrity sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==
@@ -12711,7 +12773,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.13.1, js-yaml@^3.2.5, js-yaml@^3.2.7:
+js-yaml@^3.13.1, js-yaml@^3.14.0, js-yaml@^3.2.5, js-yaml@^3.2.7:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
